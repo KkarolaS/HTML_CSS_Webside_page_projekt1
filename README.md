@@ -19,7 +19,7 @@ https://github.com/KkarolaS/HTML_CSS_Webside_page_projekt1.git
 Here you can find link to Netlify Repo:
 
 ```bash
-
+https://leafy-praline-dfb6b4.netlify.app/
 ```
 
 ## Authors and acknowledgment
