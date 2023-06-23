@@ -109,6 +109,7 @@ body {
 .about {
   padding: 10px;
   background-color: rgba(241, 241, 241, 1);
+  color: rgba(21, 45, 65, 1);
 }
 
 .about-title {
@@ -207,6 +208,7 @@ body {
   width: 170px;
   height: 170px;
   background-color: #f1f1f1;
+  color: rgba(0, 0, 0, 1);
   display: flex;
   justify-content: center;
   align-items: center;
