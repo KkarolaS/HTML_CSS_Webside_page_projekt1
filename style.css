@@ -7,6 +7,11 @@ body {
 }
 
 .page-container {
+  width: auto;
+  margin: 0 auto;
+}
+
+.container {
   width: 960px;
   margin: 0 auto;
 }
@@ -14,7 +19,7 @@ body {
 .page-navbar {
   background-color: #4e4e4e;
   height: 50px;
-  padding: 10px;
+  padding: 10px 0;
   display: flex;
   gap: 10px;
   justify-content: space-between;
@@ -24,11 +29,11 @@ body {
 
 .company-name {
   color: #ffffff;
-  margin-left: 50px;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .link-container {
-  margin-right: 50px;
   list-style-type: none;
   display: flex;
   gap: 45px;
@@ -46,6 +51,7 @@ body {
 
 .landing-page {
   height: 100vh;
+  top: 0;
   background-image: url(background-photo.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -55,45 +61,44 @@ body {
 }
 
 .landing-page-shadow {
-  background: rgba(0, 0, 0, 0.15);
-  padding: 10px;
   width: 100%;
+  background: rgba(0, 0, 0, 0.15);
+  padding: 10px 0;
 }
 
 .main-slogan {
   width: 60%;
   margin-top: 25%;
-  margin-left: 50px;
-  margin-right: 50px;
   font-size: 36px;
   font-weight: 700;
+  line-height: 42px;
 }
 
 .second-slogan {
-  margin-left: 50px;
-  margin-right: 50px;
   margin-top: 60px;
   font-size: 18px;
   font-weight: 700;
-}
-
-.button-offer {
-  width: auto;
-  height: 40px;
-  margin-left: 50px;
-  margin-top: 60px;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 700;
-  border: 3px solid #ffffff;
-  background-color: rgba(196, 196, 196, 0);
-  transition: background-color 1s linear color 1s linear;
+  line-height: 21px;
 }
 
 .button-offer a {
   text-decoration: none;
   color: #ffffff;
   padding: 20px 40px;
+  font-family: "Roboto", sans-serif;
+}
+
+.button-offer {
+  width: auto;
+  height: 40px;
+  margin-top: 60px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  border: 3px solid #ffffff;
+  background-color: rgba(196, 196, 196, 0);
+  transition: background-color 1s linear, color 1s linear;
 }
 
 .button-offer:hover {
@@ -107,32 +112,37 @@ body {
 }
 
 .about {
-  padding: 10px;
   background-color: rgba(241, 241, 241, 1);
   color: rgba(21, 45, 65, 1);
+  padding: 10px 0;
 }
 
 .about-title {
-  margin-left: 50px;
   margin-top: 60px;
   font-size: 35px;
   font-weight: 700;
+  line-height: 42px;
 }
 
 .employees-container {
-  margin: 60px 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  line-height: 21px;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 40px;
+  gap: 50px;
 }
 
 .employee {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
   gap: 40px;
+  text-align: justify;
 }
 
 .employees-container .employee:nth-of-type(even) {
@@ -144,8 +154,9 @@ body {
 
 .employee-image {
   width: 190px;
-  height: 190px;
+  aspect-ratio: 1;
   border-radius: 50%;
+  align-self: center;
   background-size: cover;
   background-position: center center;
 }
@@ -174,41 +185,42 @@ body {
 
 .offer {
   background-color: rgba(64, 93, 120, 1);
-  height: 600px;
+  height: 689px;
   display: flex;
-  flex-direction: column;
 }
 
 .offer-shadow {
   background: rgba(0, 0, 0, 0.15);
-  height: 100%;
-  padding: 10px;
+  padding: 10px 0;
+  width: 100%;
 }
 
 .offer-title {
   color: rgba(255, 255, 255, 1);
-  margin-left: 50px;
   margin-top: 60px;
   font-size: 35px;
   font-weight: 700;
+  line-height: 30px;
+  text-align: start;
 }
 
 .offer-container {
-  width: 60%;
-  height: 60%;
+  width: 720px;
+  height: 450px;
   margin: 60px auto;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 60px;
 }
 
 .box {
-  width: 170px;
-  height: 170px;
+  width: 198px;
+  height: 198px;
   background-color: #f1f1f1;
   color: rgba(0, 0, 0, 1);
+  line-height: 28px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -226,7 +238,7 @@ body {
 
 .box1-eclise {
   width: 22px;
-  height: 22px;
+  aspect-ratio: 1;
   background-color: rgba(224, 122, 100, 1);
   border-radius: 50%;
   position: absolute;
@@ -249,21 +261,18 @@ body {
   background-color: rgba(78, 78, 78, 1);
   height: 70px;
   color: rgba(255, 255, 255, 1);
-  padding: 10px;
+  padding: 10px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   align-content: center;
 }
 
-.footer-text {
-  margin-left: 50px;
-}
-
 .insta-fb-container {
   margin-right: 50px;
   gap: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 20px;
 }
